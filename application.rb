@@ -32,8 +32,8 @@ end
 
 # form submit
 post '/hello/' do
-    job = params[:job] || "Oh. I guess you don't work." # what are these things in quotes?
-    name = params[:name] || "Nobody" # i thought it might be what returns when input is null?
+    job = params[:job] || "Oh. I guess you don't work." 
+    name = params[:name] || "Nobody" 
       if params[:name] == ""
         redirect to('/error')
       end
@@ -51,6 +51,4 @@ end
 
 
 
-# you had me dig in a little bit to see if I could figure out redirects. 
-# see above to see where I got! 
-# added a tests folder, grabbed it off the web and would love to look through it
+
